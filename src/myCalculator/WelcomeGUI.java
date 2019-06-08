@@ -35,26 +35,26 @@ public class WelcomeGUI {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		JPanel panel = new JPanel();
-		panel.setBackground(Color.DARK_GRAY);
+		panel.setBackground(Color.BLACK);
 		panel.setBounds(0, 0, 246, 358);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		JLabel lblNewLabel = new JLabel("My Calculator");
 		lblNewLabel.setBounds(29, 77, 184, 44);
 		panel.add(lblNewLabel);
-		lblNewLabel.setBackground(Color.WHITE);
+		lblNewLabel.setBackground(Color.CYAN);
 		lblNewLabel.setForeground(new Color(245, 245, 245));
 		lblNewLabel.setFont(new Font("Century Gothic", Font.BOLD, 27));
 		JLabel label = new JLabel("");
 		Image logo=new ImageIcon(this.getClass().getResource("/CalculatorIcon.png")).getImage();
 		label.setIcon(new ImageIcon(logo));
-		label.setForeground(new Color(245, 245, 245));
+		label.setForeground(Color.black);
 		label.setFont(new Font("Century Gothic", Font.BOLD, 27));
-		label.setBackground(Color.WHITE);
+		label.setBackground(Color.BLACK);
 		label.setBounds(71, 132, 107, 81);
 		panel.add(label);
 		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(new Color(102, 205, 170));
+		panel_1.setBackground(Color.black);
 		panel_1.setBounds(245, 0, 430, 358);
 		frame.getContentPane().add(panel_1);
 		panel_1.setLayout(null);
@@ -63,7 +63,7 @@ public class WelcomeGUI {
 		panel_1.add(label_1);
 		JLabel lblNewLabel_2 = new JLabel("Welcome");
 		lblNewLabel_2.setFont(new Font("Century Gothic", Font.BOLD, 40));
-		lblNewLabel_2.setForeground(SystemColor.desktop);
+		lblNewLabel_2.setForeground(SystemColor.CYAN);
 		lblNewLabel_2.setBounds(114, 68, 213, 59);
 		panel_1.add(lblNewLabel_2);
 		JButton btnAbout = new JButton("About");
@@ -73,8 +73,8 @@ public class WelcomeGUI {
 				new About();
 			}
 		});
-		btnAbout.setForeground(SystemColor.menu);
-		btnAbout.setBackground(SystemColor.desktop);
+		btnAbout.setForeground(SystemColor.CYAN);
+		btnAbout.setBackground(SystemColor.blue);
 		btnAbout.setFont(new Font("Century Gothic", Font.BOLD, 18));
 		btnAbout.setHorizontalAlignment(SwingConstants.LEFT);
 		btnAbout.setBounds(229, 182, 91, 41);
@@ -88,8 +88,8 @@ public class WelcomeGUI {
 			}
 		});
 		btnStart.setVerticalAlignment(SwingConstants.TOP);
-		btnStart.setForeground(SystemColor.menu);
-		btnStart.setBackground(SystemColor.desktop);
+		btnStart.setForeground(SystemColor.CYAN);
+		btnStart.setBackground(SystemColor.blue);
 		btnStart.setFont(new Font("Century Gothic", Font.BOLD, 20));
 		btnStart.setBounds(114, 182, 91, 41);
 		panel_1.add(btnStart);
